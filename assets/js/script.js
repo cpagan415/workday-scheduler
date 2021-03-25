@@ -37,3 +37,6 @@ dateEl.innerHTML = print;
 }
 
 currentTime();
+
+
+//Step 2 displayed time blocks

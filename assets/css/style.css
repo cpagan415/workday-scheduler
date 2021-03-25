@@ -13,6 +13,15 @@ textarea{
   padding: 10px;
 }
 
+.bg {
+  background-color: lightgray;
+}
+
+.bg-blue
+{
+  background-color: skyblue;
+}
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -69,3 +78,4 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
