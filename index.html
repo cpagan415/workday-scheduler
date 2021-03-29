@@ -29,56 +29,54 @@
       <div class="currentTime"></div>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <form class="form">
-      <!-- Timeblocks go here -->
+
+    <div id="form" class="container">
       <div class="row mt-5 border rounded">
         <div class="col-2 text-right my-auto">9AM</div>
-        <input class="col-9 bg userInput" style="border: none"></input>
-        <button class="col-1 bg-blue button"  style="border:none"><i class="far fa-save fa-2x" style="color: white"></i></button>
+        <textarea id="text1" class="col-9 bg"></textarea>
+        <button type='button' class='button col-1 bg-blue' style="border: none" onclick='buttonClick(this)' id='1'><i class="far fa-save fa-2x" style="color: white"></i></button>
       </div>
-        <div class="row border rounded">
+      <div class="row border rounded">
         <div class="col-2 text-right my-auto">10AM</div>
-        <input class="col-9 bg userInput" style="border: none"></input>
-        <button class="col-1 bg-blue button"  style="border:none"><i class="far fa-save fa-2x" style="color: white"></i></button>
+        <textarea id="text2" class="col-9 bg"></textarea>
+        <button type='button'class='button col-1 bg-blue' style="border: none" onclick='buttonClick(this)' id='2'><i class="far fa-save fa-2x" style="color: white"></i></button>
       </div>
       <div class="row border rounded">
         <div class="col-2 text-right my-auto">11AM</div>
-        <input class="col-9 bg userInput" style="border: none"></input>
-        <button class="col-1 bg-blue button"  style="border:none"><i class="far fa-save fa-2x" style="color: white"></i></button>
+        <textarea id="text3" class="col-9 bg"></textarea>
+        <button type='button' class='button col-1 bg-blue' style="border: none" onclick='buttonClick(this)' id='3'><i class="far fa-save fa-2x" style="color: white"></i></button>
       </div>
       <div class="row border rounded">
         <div class="col-2 text-right my-auto">12AM</div>
-        <input class="col-9 bg userInput" style="border: none"></input>
-        <button class="col-1 bg-blue button"  style="border:none"><i class="far fa-save fa-2x" style="color: white"></i></button>
+        <textarea id="text4" class="col-9 bg"></textarea>
+        <button type='button' class='button col-1 bg-blue' style="border: none" onclick='buttonClick(this)' id='4'><i class="far fa-save fa-2x" style="color: white"></i></button>
       </div>
       <div class="row border rounded">
         <div class="col-2 text-right my-auto">1PM</div>
-        <input class="col-9 bg userInput" style="border: none"></input>
-        <button class="col-1 bg-blue button"  style="border:none"><i class="far fa-save fa-2x" style="color: white"></i></button>
+        <textarea id="text5" class="col-9 bg"></textarea>
+        <button type='button' class='button col-1 bg-blue' style="border: none" onclick='buttonClick(this)' id='5'><i class="far fa-save fa-2x" style="color: white"></i></button>
       </div>
       <div class="row border rounded">
         <div class="col-2 text-right my-auto">2PM</div>
-        <input class="col-9 bg userInput" style="border: none"></input>
-        <button class="col-1 bg-blue button"  style="border:none"><i class="far fa-save fa-2x" style="color: white"></i></button>
+        <textarea id="text6" class="col-9 bg"></textarea>
+        <button type='button' class='button col-1 bg-blue' style="border: none" onclick='buttonClick(this)' id='6'><i class="far fa-save fa-2x" style="color: white"></i></button>
       </div>
       <div class="row border rounded">
         <div class="col-2 text-right my-auto">3PM</div>
-        <input class="col-9 bg userInput" style="border: none"></input>
-        <button class="col-1 bg-blue button"  style="border:none"><i class="far fa-save fa-2x" style="color: white"></i></button>
+        <textarea id="text7" class="col-9 bg"></textarea>
+        <button type='button' class='button col-1 bg-blue' style="border: none" onclick='buttonClick(this)' id='7'><i class="far fa-save fa-2x" style="color: white"></i></button>
       </div>
       <div class="row border rounded">
         <div class="col-2 text-right my-auto">4PM</div>
-        <input class="col-9 bg userInput" style="border: none"></input>
-        <button class="col-1 bg-blue button"  style="border:none"><i class="far fa-save fa-2x" style="color: white"></i></button>
+        <textarea id="text8" class="col-9 bg"></textarea>
+        <button type='button' class='button col-1 bg-blue' style="border: none" onclick='buttonClick(this)' id='8'><i class="far fa-save fa-2x" style="color: white"></i></button>
       </div>
       <div class="row border rounded">
         <div class="col-2 text-right my-auto">5PM</div>
-        <input class="col-9 bg userInput" style="border: none"></input>
-        <button class="col-1 bg-blue button"  style="border:none"><i class="far fa-save fa-2x" style="color: white"></i></button>
+        <textarea id="text9" class="col-9 bg"></textarea>
+        <button type='button' class='button col-1 bg-blue' style="border: none" onclick='buttonClick(this)' id='9'><i class="far fa-save fa-2x" style="color: white"></i></button>
       </div>
-    </form>
-    </div>  
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>

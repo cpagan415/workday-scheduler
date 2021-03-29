@@ -6,40 +6,74 @@ var currTime = moment().format("MMMM Do YYYY hh:mm a");
 var dateEl = document.getElementById('currentDay');
 dateEl.innerHTML = currTime;
 
-//saving to-do task on a page 
-//https://www.youtube.com/watch?v=rVyTjFofok0 used as reference
-const userInput = document.querySelector('.userInput');
-const btn = document.querySelector('.button');
-const storageDisplay = localStorage.getItem('userToDo');
-
-//https://www.youtube.com/watch?v=NxVCq4p0Kb0&t=400s
-//using this as reference to make an object for the tasks added to the form
-//I want to be able to assign each task a date in a object
-
-//an empty array to push the object into
-let taskToDo = [];
-
-var addTask = function(event) {
-    event.preventDefault();
-
-    let task = {
-        date: moment(),
-        task: document.querySelector('.userInput').value
-
-    };
-
-    //this will push the newly created task in to the task object
-    taskToDo.push(task);
-    console.log(taskToDo);
+//create variables to store input values 
+//user text saved for each time block
+var emptyList = [];
+var button = document.querySelector('.button');
 
 
-    //localStorage
-    localStorage.setItem('userInput', JSON.stringify(taskToDo));
+var saveTask = function(emptyList){
+    localStorage.setItem('tasks', JSON.stringify(emptyList));
 }
 
-//adding an event listener for when user enters text 
-document.querySelector('.button').addEventListener('click', addTask);
+function buttonClick(button){
+//issue here is that when the user edits the text, the local storage does not remove the previous value 
+
+switch(button.id) {
+    case '1':
+        var text = document.getElementById('text1').value;
+        emptyList.push(text);
+        saveTask(emptyList);
+        break;
+    case '2':
+        var text = document.getElementById('text2').value;
+        emptyList.push(text);
+        saveTask(emptyList);
+        break;
+    case '3':
+        var text = document.getElementById('text3').value;
+        emptyList.push(text);
+        saveTask(emptyList);
+        break;
+    case '4':
+        var text = document.getElementById('text4').value;
+        emptyList.push(text);
+        saveTask(emptyList);
+        break;
+    case '5':
+        var text = document.getElementById('text5').value;
+        emptyList.push(text);
+        saveTask(emptyList);
+        break;
+    case '6':
+        var text = document.getElementById('text6').value;
+        emptyList.push(text);
+        saveTask(emptyList);
+        break;
+    case '7':
+        var text = document.getElementById('text7').value;
+        emptyList.push(text);
+        saveTask(emptyList);
+        break;
+    case '8':
+        var text = document.getElementById('text8').value;
+        emptyList.push(text);
+        saveTask(emptyList);
+        break;
+    case '9':
+        var text = document.getElementById('text9').value;
+        emptyList.push(text);
+        saveTask(emptyList);
+        break;
+    default:
+        console.log('nothing');
+}
+}
 
 
 
 
+
+
+  
+  
